@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>560</width>
+    <height>840</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLCDNumber" name="points">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>10</y>
+      <width>150</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+font: 22pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>200</y>
+      <width>150</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 25 16pt &quot;Perpetua Titling MT&quot;;
+color: rgb(255, 253, 251);</string>
+    </property>
+    <property name="text">
+     <string>LINES</string>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="Lines">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>300</y>
+      <width>150</width>
+      <height>60</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>560</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="gameSettings">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <widget class="QMenu" name="Style">
+     <property name="title">
+      <string>Style</string>
+     </property>
+     <addaction name="Dark"/>
+     <addaction name="Light"/>
+     <addaction name="Indian"/>
+     <addaction name="Special"/>
+    </widget>
+    <widget class="QMenu" name="menuTile_Type">
+     <property name="title">
+      <string>Tile Type</string>
+     </property>
+     <addaction name="Square"/>
+     <addaction name="RoundSquare"/>
+     <addaction name="Circle"/>
+    </widget>
+    <addaction name="Style"/>
+    <addaction name="menuTile_Type"/>
+   </widget>
+   <addaction name="gameSettings"/>
+  </widget>
+  <action name="Dark">
+   <property name="text">
+    <string>Dark</string>
+   </property>
+  </action>
+  <action name="Light">
+   <property name="text">
+    <string>Light</string>
+   </property>
+  </action>
+  <action name="Indian">
+   <property name="text">
+    <string>Indian</string>
+   </property>
+  </action>
+  <action name="Special">
+   <property name="text">
+    <string>Special</string>
+   </property>
+  </action>
+  <action name="Square">
+   <property name="text">
+    <string>Square</string>
+   </property>
+  </action>
+  <action name="RoundSquare">
+   <property name="text">
+    <string>RoundSquare</string>
+   </property>
+  </action>
+  <action name="Circle">
+   <property name="text">
+    <string>Circle</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
